@@ -1,0 +1,43 @@
+#section_dashboard{
+    height: calc(100vh - 40px);
+}
+#section_dashboard .row, #section_dashboard .row .col{
+    height: 100%;
+}
+#section_nav{
+    height: 40px;
+}
+#section_control{
+    
+}
+#section_transcript{
+    overflow-y: scroll;
+}
+#section_code{
+    padding: 0;
+}
+#control_rubric{
+    overflow-y: scroll;
+    height: calc(100vh - 125px);
+}
+#control_rubric .card{
+    border-right: 10px solid #007bff;
+    background-color: #DFE0E0;
+}
+#control_rubric .card-body{
+    padding: 15px;
+}
+#control_rubric div.micro{
+    margin-left: 50px !important;
+}
+#section_transcript .code{
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+}
+#section_transcript .code h6{
+    text-align: center;
+}
+#section_transcript .rowindex{
+    height: 100%;
+}

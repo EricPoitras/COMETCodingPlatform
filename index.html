@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+      
+    <title>SRL Coder</title>
+  </head>
+  <body>
+    <nav id="section_nav" class="bg-primary text-white d-flex align-items-center">
+        <h6 class="ml-3">COMET Coding Platform</h6>
+        <a href="#" class="d-block text-white p-1 mr-1 ml-auto">Workspace</a>
+        <a href="#" class="d-block text-white p-1 mr-3">Dashboard</a>
+    </nav>
+    <div id="section_dashboard" class="container-fluid">
+        <div class="row">
+            <div id="section_control" class="col-2 bg-dark text-white">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="text-muted m-2">PROJECT</h6>
+                        </div>
+                        <div class="col-auto pl-2 pt-1">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control" type="text" placeholder="Last, First Name">
+                            <button type="button" class="w-100 mt-3 btn btn-outline-light">SAVE</button>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <h6 class="text-muted m-2">AI ASSISTANT</h6>
+                        </div>
+                        <div class="col-auto pl-2 pt-1">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h6>CODE<span></span></h6>
+                            <p>N/A</p>
+                            <h6>CONFIDENCE (%)<span></span></h6>
+                            <p>N/A</p>
+                            <button type="button" class="w-100 btn btn-outline-light">PREDICT</button>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <h6 class="text-muted m-2">SERVER</h6>
+                        </div>
+                        <div class="col-auto pl-2 pt-1">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h6>CONNECTION<span></span></h6>
+                            <p> <i class="fas fa-spinner"></i> Establishing connection...</p>
+                            <div class="btn-group w-100" role="group" aria-label="Basic example">
+                              <button type="button" class="btn btn-outline-light">GET</button>
+                              <button type="button" class="btn btn-outline-light">SET</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section_transcript" class="col bg-white">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="text-muted m-2">TRANSCRIPT</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 p-0 bg-info text-white">
+                            <div class="d-table rowindex w-100">
+                                <h6 class="d-table-cell align-middle text-center">1</h6>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="card p-3 m-1 mr-3"><span><strong>T: </strong>Talk turn</span></div>
+                            <div class="card p-3 m-1 ml-3"><span><strong>C: </strong>Talk turn</span></div>
+                        </div>
+                        <div class="col-2 p-0">
+                            <div class="card bg-light code d-table">
+                                <h6 class="d-table-cell align-middle">GS</h6>
+                            </div>
+                        </div>
+                        <div class="col-2 p-0">
+                            <div class="card bg-light code d-table">
+                                <h6 class="d-table-cell align-middle">OTHER</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section_code" class="col-4 bg-light">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="text-muted m-2">CODE</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="control_search">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-auto p-1">
+                                            <div class="dropdown">
+                                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Select
+                                              </button>
+                                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">SRL</a>
+                                                <a class="dropdown-item" href="#">CSCL</a>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <input class="form-control" type="text" placeholder="Search">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col pr-0 pl-1">
+                            <div id="control_rubric">
+                                <div class="card mr-3 mt-1 ml-3 mb-1 macro">
+                                    <div class="card-body">
+                                        <i class="fas fa-caret-down"></i><span class="ml-3">Planning (6)</span>
+                                    </div>
+                                </div>
+                                <div class="card mr-3 mt-1 ml-3 mb-1 micro">
+                                    <div class="card-body">
+                                        <i class="fas fa-plus"></i><span class="ml-3">Subgoal (SG)</span><i class="fas fa-question float-right"></i>
+                                    </div>
+                                    <div class="card-footer bg-light">
+                                        <p>Definition:</p>
+                                        <p>Example:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
