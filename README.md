@@ -11,12 +11,12 @@
 1. get_Database (Retrieves CodingSchemeDatabase & TranscriptDatabase to populate data in user interface)
 
 # Webservices (API) Calls
-2. set_Database (Updates TranscriptDatabase when user clicks on Set - URL parameter Query="")
-3. apply_Model (Applies model when user clicks on predict - URL parameter Talk_Turn="")
+2. set_Database (Updates TranscriptDatabase when user clicks on Set to save rater names and codes - URL parameter Query="")
+3. apply_Model (Applies model when user clicks on predict to generate recommended code and model probabilities - URL parameter Talk_Turn="")
 
 # Machine Learning Algorithm
 1. Classifier (Store Model)
 2. train_Model (Train and Evaluate Model)
 
-# Static Dashboard for Interrater Reliability and Descriptive Stats
-... To be built later...
+# Static Dashboard
+... To be built later... Graphs and metrics for interrater reliability and descriptive stats
