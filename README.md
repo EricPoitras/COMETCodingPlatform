@@ -18,5 +18,5 @@
 1. Classifier (Store Model)
 2. train_Model (Train and Evaluate Model)
 
-# Static Dashboard 
+# Static Dashboard for Interrater Reliability and Descriptive Stats
 ... To be built later...
